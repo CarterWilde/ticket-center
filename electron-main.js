@@ -1,23 +1,26 @@
+require('custom-env').env()
 const { app, BrowserWindow } = require('electron')
 
 function createWindow () {
   // Create the browser window.
+
   const win = new BrowserWindow({
-    width: 800,
-    height: 600,
+    width: 1600,
+    height: 900,
+    backgroundColor: '#282c34',
     webPreferences: {
       nodeIntegration: true
     }
   })
+  win.setMenuBarVisibility(false);
 
-  // and load the index.html of the app.
-  win.loadFile('index.html')
+  win.loadURL(`http://localhost:${process.env.PORT}/`);
 }
 
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
-app.whenReady().then(createWindow)
+app.whenReady().then(createWindow);
 
 // Quit when all windows are closed.
 app.on('window-all-closed', () => {
@@ -26,7 +29,7 @@ app.on('window-all-closed', () => {
   if (process.platform !== 'darwin') {
     app.quit()
   }
-})
+});
 
 app.on('activate', () => {
   // On macOS it's common to re-create a window in the app when the
@@ -34,4 +37,4 @@ app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) {
     createWindow()
   }
-})
+});
