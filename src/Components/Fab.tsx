@@ -1,5 +1,5 @@
 import React from 'react';
-import './Fab.css';
+import './styles/Fab.css';
 
 type FabIcon = {
   text: string,
