@@ -30,7 +30,7 @@ export default class Fab extends React.Component<FabProps> {
         }>
           {this.props.icon.text?<span>{this.props.icon.text}</span>:null}
         </i>
-    <span className="fab-content">{this.props.content}</span>
+        <span className="fab-content">{this.props.content}</span>
       </div>
     );
   }
