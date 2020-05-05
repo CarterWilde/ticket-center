@@ -1,0 +1,25 @@
+nav#TitleBar {
+  height: 3.25em;
+  background-color: rgba(130, 132, 137, .10);
+  z-index: 10;
+}
+
+nav#TitleBar #window_settings {
+  display: flex;
+  align-items: center;
+  float: right;
+  height: 100%;
+  margin: 0;
+  font-size: 2em;
+  padding-right: .75%;
+}
+
+nav#TitleBar #window_settings .setting {
+  cursor: pointer;
+  margin: 0px 10px;
+}
+
+nav#TitleBar #window_settings .setting::selection {
+  color: none;
+  background: none;
+}
