@@ -1,0 +1,77 @@
+
+.fab {
+  position: fixed;
+  bottom: 2%;
+}
+
+.fab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #20BF55;
+  width:  80px;
+  height: 80px;
+  font-style: normal;
+  font-size: 4em;
+  cursor: pointer;
+  z-index: 21;
+  border-style: solid;
+  border-color: #282828;
+  border-width: 10px;
+  border-radius: 50%;
+  text-shadow: 2px 2px rgba(0, 0, 0, .50);
+}
+
+.fab-content {
+  font-size: 1.75em;
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.fab:hover > .fab-content {
+  display: flex;
+  position: fixed;
+  background-color: #20BF55;
+  height: 80px;
+  z-index: -1;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+}
+
+.fab .fab-content {
+  /* we have to add our offset and border */
+  bottom: calc(2% + 10px);
+}
+
+.fab.right {
+  right: 2%;
+}
+
+.fab.left {
+  left: 2%;
+}
+
+.fab.right .fab-content {
+  /* Use half our width from the fab icon and add the padding from the right*/
+  right: calc(2% + 40px + 20px);
+  width: 235px;
+  padding-left: 20px;
+}
+
+.fab.left .fab-content {
+  /* Use half our width from the fab icon and add the padding from the right*/
+  left: calc(2% + 40px + 20px);
+  width: 235px;
+  padding-left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
