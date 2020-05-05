@@ -1,9 +1,14 @@
-export default class Icon{
+import { MouseEventHandler } from "react";
+
+export default class Icon {
   public text: string;
   public classNames?: string[];
-  constructor(text: string, classNames?: string[]) {
+  public clickHandler?: MouseEventHandler;
+
+  constructor(text: string, classNames?: string[], clickHandler?: MouseEventHandler) {
     this.text = text;
     this.classNames = classNames;
+    this.clickHandler = clickHandler;
   }
   /**
    * CSS Friendly className list
