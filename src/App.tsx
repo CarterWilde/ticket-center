@@ -4,7 +4,7 @@ import './App.css';
 
 import Fab from './Components/Fab';
 import TitleBar from './Components/TitleBar';
-import Icon from './Components/Icon';
+import Icon from './Components/ts/Icon';
 
 function App() {
   return (

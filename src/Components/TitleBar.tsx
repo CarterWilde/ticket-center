@@ -1,7 +1,7 @@
 import React, { FunctionComponent } from 'react';
 import './styles/TitleBar.css';
 
-import Icon from './Icon';
+import Icon from './ts/Icon';
 
 type TitleBarProps = {
   icons: Array<Icon>

@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Fab.css';
-import Icon from './Icon';
+import Icon from './ts/Icon';
 /**
  * {@link isLeft} false = Right, true = Left
  */
