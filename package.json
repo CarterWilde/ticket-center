@@ -40,8 +40,8 @@
     ]
   },
   "devDependencies": {
-    "concurrently": "^5.2.0",
+    "concurrently": "^5.3.0",
     "custom-env": "^2.0.1",
-    "electron": "^8.2.4"
+    "electron": "^8.5.5"
   }
 }
